@@ -1,0 +1,30 @@
+{
+  "wallContactRule": "auto",
+  "slabContactRule": "auto",
+  "onlyConcreteNeighbors": true,
+  "neighborGenericModels": false,
+  "footingSides": "form",
+  "pourLiftMm": 0,
+
+  "contactToleranceMm": 20,
+  "topFaceMaxTiltDeg": 30,
+  "bottomFaceMaxTiltDeg": 30,
+  "minFootingWideningMm": 100,
+  "minStemHeightMm": 300,
+  "minFootingThicknessMm": 150,
+  "minFaceAreaCm2": 1,
+  "sampleStepMm": 50,
+  "probeSliceMm": 10,
+
+  "writeParameters": true,
+  "createSchedule": true,
+  "scheduleName": "ARBA - Metrado de encofrado (muros de contencion)",
+  "openSchedule": true,
+
+  "hostCategories": [ "StructuralFoundation", "Walls" ],
+
+  "sectionOverrides": {
+    "Muro de contencion perimetral": { "footingTopMm": 0, "noFooting": false },
+    "Muro de contencion esquinero":  { "footingTopMm": 0, "noFooting": false }
+  }
+}
