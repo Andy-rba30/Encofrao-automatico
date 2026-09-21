@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>ARBA Encofrado</Name>
+    <Assembly>RetainingWallFormwork\RetainingWallFormwork.dll</Assembly>
+    <FullClassName>RetainingWallFormwork.RibbonApp</FullClassName>
+    <ClientId>5b8d2f41-7c3e-4a96-9d10-2e6f8a1c4b73</ClientId>
+    <VendorId>LOCAL</VendorId>
+    <VendorDescription>Uso interno</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Name>Metrar encofrado de muros de contencion</Name>
+    <Text>Metrar encofrado de muros de contencion</Text>
+    <Description>Metra el encofrado (m2 de contacto) de muros de contencion a partir de la geometria real del elemento, descontando el contacto con muros, losas y otros elementos de concreto, y escribe los resultados en una tabla de planificacion.</Description>
+    <Assembly>RetainingWallFormwork\RetainingWallFormwork.dll</Assembly>
+    <FullClassName>RetainingWallFormwork.MetrarEncofradoCommand</FullClassName>
+    <ClientId>c2a7e9d3-4f61-4b28-8e5c-7d09b3f1a642</ClientId>
+    <VendorId>LOCAL</VendorId>
+    <VendorDescription>Uso interno</VendorDescription>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+  </AddIn>
+</RevitAddIns>
